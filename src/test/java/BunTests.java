@@ -5,11 +5,11 @@ import org.junit.runners.Parameterized;
 import praktikum.Bun;
 
 @RunWith(Parameterized.class)
-public class BunPositiveTests {
+public class BunTests {
     private final String name;
     private final float price;
 
-    public BunPositiveTests(String name, float price) {
+    public BunTests(String name, float price) {
         this.name = name;
         this.price = price;
     }
@@ -18,7 +18,7 @@ public class BunPositiveTests {
     public static Object[][] getData() {
         return new Object[][] {
                 { "Обычная", 8f },
-                { "Рженая", 10f },
+                { "Ржаная", 10f },
                 { "Сырная", 30.5f }
         };
     }
