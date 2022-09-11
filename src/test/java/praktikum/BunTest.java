@@ -15,7 +15,7 @@ public class BunTest {
         this.price = price;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Test data: Bun = {0}; Price = {1}")
     public static Object[][] getData() {
         return new Object[][] {
                 { "Обычная", 8f },
@@ -37,12 +37,4 @@ public class BunTest {
         float actual = bun.getPrice();
         Assert.assertEquals(price, actual, 0);
     }
-
-//    @Test
-//    public void getName() {
-//    }
-//
-//    @Test
-//    public void getPrice() {
-//    }
 }
